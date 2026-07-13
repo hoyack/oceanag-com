@@ -1,0 +1,19 @@
+{
+  "name": "oceanag-com",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "serve": "python3 -m http.server 4173 --directory dist",
+    "validate": "html-validate index.html insights/**/*.html about/**/*.html subscribe/**/*.html contact/**/*.html privacy/**/*.html terms/**/*.html disclosure/**/*.html corrections/**/*.html",
+    "test": "npm run build && start-server-and-test serve http://127.0.0.1:4173 test:browser",
+    "test:browser": "node tests/site.test.mjs",
+    "test:static": "node tests/static.test.mjs",
+    "test:all": "npm run validate && npm run test:static && npm test"
+  },
+  "devDependencies": {
+    "html-validate": "^10.4.0",
+    "playwright": "^1.55.0",
+    "start-server-and-test": "^2.1.5"
+  }
+}

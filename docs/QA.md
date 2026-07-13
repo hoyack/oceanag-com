@@ -18,7 +18,7 @@ Verified on July 12–13, 2026 UTC:
 - Lighthouse 13.0.3, local final homepage: Performance 100, Accessibility 100, Best Practices 100, SEO 100.
 - `npm audit --audit-level=high`: 0 known vulnerabilities.
 - Calendly CTA: HTTPS 200 with `utm_source=oceanag` preserved.
-- `npm run build`: 18 deployable files in `dist/`; docs, tests, screenshots, environment examples, package metadata, and build scripts excluded.
+- `npm run build`: 17 deployable files in `dist/`; docs, tests, screenshots, environment examples, package metadata, and build scripts excluded.
 - Preview publish check: `/` returns 200; `/scripts/build.mjs` returns 404.
 
 ## Manual visual review

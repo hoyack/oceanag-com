@@ -1,5 +1,0 @@
---- styles/main.css
-+++ styles/main.css
-@@ -1 +1 @@
--.hero{background:var(--deep);color:var(--white);overflow:hidden}
-+.hero{background:var(--deep);color:var(--white);overflow:hidden;position:relative}.hero::before{content:"";position:absolute;inset:0;background:url(/assets/hero.webp) center/cover no-repeat;opacity:.12;pointer-events:none;z-index:0}.hero-grid,.field-note{position:relative;z-index:1}
